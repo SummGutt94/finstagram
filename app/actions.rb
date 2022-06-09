@@ -49,5 +49,6 @@ def humanized_time_ago(minute_num)
     # This is the new addition
     @finstagram_posts = [@finstagram_post_shark, @finstagram_post_whale, @finstagram_post_marlin]
 
+    # use a given .erb file 
     erb(:index)
   end
