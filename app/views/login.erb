@@ -1,6 +1,6 @@
 <%= @error_message if @error_message %>
 
-<form action="/login" method="POST">
+<form action="/login" method="POST" style='padding:25px;'>
     <div class="form-group">
         <label for="username">Username: </label>
         <input type="text" id="username" name="username" value="--------">
@@ -12,3 +12,7 @@
         <button class="button" type="submit">Login!</button>
     </div>
 </form>
+
+<footer>
+    <a href="/"><h5> Return To Main Page </h5></a>
+</footer>
