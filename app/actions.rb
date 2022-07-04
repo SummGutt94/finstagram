@@ -105,3 +105,7 @@ delete '/likes/:id' do
   like.destroy
   redirect(back)
 end
+
+get '/profile' do
+  "Hello World"
+end
