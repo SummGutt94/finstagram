@@ -10,12 +10,12 @@ get '/' do
   erb(:index)
 end
 
-get '/signup' do
+get '/signup' do              # if a user navigates to the path "/signup",
   @user = User.new
   erb(:signup)
 end
 
-post '/signup' do     # if a user navigates to the path "/signup",
+post '/signup' do     
     email      = params[:email]
     avatar_url = params[:avatar_url]
     username   = params[:username]
@@ -107,5 +107,5 @@ delete '/likes/:id' do
 end
 
 get '/profile' do
-  "Hello World"
+  erb(:profile)
 end
