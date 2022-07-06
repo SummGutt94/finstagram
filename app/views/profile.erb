@@ -12,11 +12,8 @@ function ShowAndHide() {
 <h2>Your User Profile</h2>
 
 <h4><span STYLE="font-weight: normal;">Currently Logged in As:  </span><%= current_user.username %> </h6>
-
 <h4><span STYLE="font-weight: normal;">Your Email on Record for Finstagram:  </span><%= current_user.email %> </h6>
-
 <h4><span STYLE="font-weight: normal;">Profile photo:  </span><img src="<%= current_user.avatar_url %>" alt="<%= current_user.username %>" width=75px height=75px></h5>
-
 <h4>
     <span STYLE="font-weight: normal;">User Password:</span> 
     <br>
@@ -24,9 +21,6 @@ function ShowAndHide() {
     <br><br>
     <DIV ID="SectionName" STYLE="display:none" ><%=current_user.password %></DIV>
 </h4>
-
-
-
 
 <footer>
     <a href="/"><h5> Return To Main Page </h5></a>
